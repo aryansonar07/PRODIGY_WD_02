@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">STOPWATCH</h1>
+            <p class="subtitle">STOPWATCH</p>
+        </header>
+        <section class="stopwatch" aria-label="Stopwatch">
+            <div id="display" aria-label="Elapsed time">00:00:00.00</div>
+            <p class="status" id="status" aria-live="polite">READY</p>
+        </section>
+        <div class="buttons" role="group" aria-label="Stopwatch controls">
+            <button id="start" type="button">START</button>
+            <button id="stop" type="button" aria-label="Stop and keep the elapsed time">STOP</button>
+            <button id="lap" type="button" aria-label="Record a lap time">LAP</button>
+            <button id="reset" type="button" aria-label="Reset the timer and clear lap times">RESET</button>
+        </div>
+        <section class="lap-section" aria-labelledby="lap-heading">
+            <h2 id="lap-heading">LAP TIMES</h2>
+            <ul id="laps" aria-label="Recorded lap times">
+                <li class="empty-state">No lap times yet</li>
+            </ul>
+        </section>
+        <footer>Precision Timing</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
